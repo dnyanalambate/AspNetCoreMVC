@@ -10,7 +10,7 @@ namespace Dnyana.BookStore.Controllers
     {
         public ViewResult Index()
         {
-            TempData["key"] = "Data from Index Method";
+            TempData["key"] = "Data from Index Methods";
             return View();
         }
 
