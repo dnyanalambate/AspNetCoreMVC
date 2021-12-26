@@ -8,9 +8,12 @@ namespace Dnyana.BookStore.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "Hello world1";
+            TempData["key"] = "Data from Index Method";
+            return View();
         }
+
+       
     }
 }
